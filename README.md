@@ -1,6 +1,6 @@
 ## Presenting the ReAdABLE Human Format
 
-### written in its own format for highly productive Business Article or Software Documentation Writer.
+#### Written in its own format for highly productive Business Article or Software Documentation Writer.
 
 This is a continuously updated article, come back from time to time.
 ### Goal of the ReAdABLE Human Format
