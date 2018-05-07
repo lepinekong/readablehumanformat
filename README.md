@@ -3,7 +3,7 @@
 ### written in its own format for highly productive Business Article or Software Documentation Writer.
 
 This is a continuously updated article, come back from time to time.
-### Markdown
+### Goal of the ReAdABLE Human Format
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
