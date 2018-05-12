@@ -4,7 +4,7 @@ Red [
 
 Article: [
 
-    Title: "Comment avoir 18 au Bac de Français quand on est plutôt un/une matheux"
+    Title: "Comment avoir 18 au Bac de Français quand on est plutôt un/une matheux(se)"
 
     Sub-Title: {Kit de Français à adapter}
 
@@ -15,7 +15,7 @@ Article: [
     Introduction: [
         .title: {Introduction}
         .text: {
-            Cet article est un Kit rédigé en utilisant le ["ReAdABLE Human Format"](https://medium.com/@lepinekong/readable-human-format-md-8fda1869ef75). 
+            Cet article est un Kit rédigé en utilisant le ["ReAdABLE Human Format"](http://readablehumanformat.com). 
             
             - Pourquoi un "Kit"? Parce qu'il n'y a pas de recette universelle pour parvenir à un succès. A cela se rajoute le facteur chance.
 
