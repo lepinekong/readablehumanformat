@@ -26,9 +26,11 @@ Article: [
 
         P1: [
             .title: {Goal of the ReAdABLE Human Format}
-            .content: {
-                The **ReAdABLE Human Format** aims at **Agile Documentation** by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. Its primary goal is to generate [Markdown](https://daringfireball.net/projects/markdown/) (and conversion to other formats in the future) while being even simpler (less code to memorize) and richer (adding meta-data is straightforward and creating new semantics is easy). 
-
+            .text: {
+                The **ReAdABLE Human Format** aims at **Agile Documentation** by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. }
+            .text: {
+                Its primary goal is to generate [Markdown](https://daringfireball.net/projects/markdown/) (and conversion to other formats in the future) while being even simpler (less code to memorize) and richer (adding meta-data is straightforward and creating new semantics is easy).} 
+            .text: {
                 It can still embed markdown for convenient formatting, for example the JSON link above is written as:
 
                 ```                
