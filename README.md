@@ -12,5 +12,5 @@
 
 
 - [How To Write Good Articles](http://readablehumanformat.com/examples/howtowritegoodarticle)
-- [Github Custom Domain](http://mymementos/github.custom.domain)
+- [Github Custom Domain](http://mymementos.space/github.custom.domain)
 
