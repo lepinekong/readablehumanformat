@@ -5,7 +5,7 @@
 
 ### 
 
-This is a continuously updated article, come back from time to time.
+V.1.0.0: This is a continuously updated article, come back from time to time.
 
 ### Goal of the ReAdABLE Human Format
 
