@@ -1,10 +1,7 @@
 Red [
-    Title: "ReAdABLE.Human.Format.red"
-    Github-Url:
-    Previous-Github-Url: https://gist.githubusercontent.com/lepinekong/b59fa3e8d386dea1ebaa1a096488c542/raw/9fa57356721601e4d0b2d728f6329086c0d84410/ReAdABLE.Human.Format.red
-
     Title: "ReAdABLE Human Format"
-    File: ReAdABLE.Human.Format.red
+    File: "ReAdABLE.Human.Format.red"
+    Github-Url: 
     Output-files: [ReAdABLE.Human.Format.md]
     Categories: [ReAdABLE]
     Tags: [ReAdABLE Markdown]
@@ -30,11 +27,15 @@ Article: [
         P1: [
             .title: {Goal of the ReAdABLE Human Format}
             .content: {
-                The **ReAdABLE Human Format** aims at **Agile Documentation** by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. It is not an alternative to [JSON](https://www.json.org/) or [YAML](https://en.wikipedia.org/wiki/YAML) which are targeting machine automation. It's closer to [Markdown](https://daringfireball.net/projects/markdown/) simplicity for writer, while being even simpler (less code to memorize) and targeting larger goal than just outputting formatted document (we'll see that in a future article only). It can still embed markdown for convenient formatting, for example the JSON link above is written as:
+                The **ReAdABLE Human Format** aims at **Agile Documentation** by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. Its primary goal is to generate [Markdown](https://daringfireball.net/projects/markdown/) (and conversion to other formats in the future) while being even simpler (less code to memorize) and richer (adding meta-data is straightforward and creating new semantics is easy). 
+
+                It can still embed markdown for convenient formatting, for example the JSON link above is written as:
 
                 ```                
                 [JSON](https://www.json.org/)
                 ```
+                
+                Note that it is not an alternative to [JSON](https://www.json.org/) or [YAML](https://en.wikipedia.org/wiki/YAML) which are targeting machine automation. 
             }
             .image: https://i.snag.gy/qfjICd.jpg
             
