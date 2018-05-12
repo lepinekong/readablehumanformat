@@ -11,7 +11,7 @@
 ### Introduction
 
 
-Cet article est un Kit rédigé en utilisant le ["ReAdABLE Human Format"](https://medium.com/@lepinekong/readable-human-format-md-8fda1869ef75). 
+Cet article est un Kit rédigé en utilisant le ["ReAdABLE Human Format"](http://readablehumanformat.com). 
 
 - Pourquoi un "Kit"? Parce qu'il n'y a pas de recette universelle pour parvenir à un succès. A cela se rajoute le facteur chance.
 
