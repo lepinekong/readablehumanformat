@@ -1,5 +1,5 @@
 
-# Comment avoir 18 au Bac de Français quand on est plutôt un/une matheux
+# Comment avoir 18 au Bac de Français quand on est plutôt un/une matheux(se)
 
 
 ## Kit de Français à adapter
