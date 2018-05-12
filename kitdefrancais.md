@@ -1,0 +1,88 @@
+
+# Comment avoir 18 au Bac de Français quand on est plutôt un/une matheux
+
+
+## Kit de Français à adapter
+
+
+### Lépine Kong
+
+
+### Introduction
+
+
+Cet article est un Kit rédigé en utilisant le ["ReAdABLE Human Format"](https://medium.com/@lepinekong/readable-human-format-md-8fda1869ef75). 
+
+- Pourquoi un "Kit"? Parce qu'il n'y a pas de recette universelle pour parvenir à un succès. A cela se rajoute le facteur chance.
+
+Il est néanmoins possible d'essayer de tirer des principes à partir d'une expérience  personnelle. A chacun de les adapter ensuite selon ses besoins et choix personnels.
+
+Ces principes doivent avoir un caractère assez universel afin de pouvoir être adaptés par une autre personne et même à un autre domaine d'amélioration.
+
+- Pourquoi le ReAdABLE Human Format ? Pour profiter de ce Kit, vous devez vous astreindre à ré-écrire vous-même le contenu de chaque paragraphe. Ce format vous permet de facilement prendre un contenu pour le remixer à votre guise en modifiant, rajoutant ou supprimant des paragraphes. 
+
+Pour l'installer, il suffit de vous rendre sur la page [https://gist.github.com/lepinekong/b59fa3e8d386dea1ebaa1a096488c542](https://gist.github.com/lepinekong/b59fa3e8d386dea1ebaa1a096488c542), de cliquer sur le premier bouton "raw" à droite de ".ReAdABLE.HumanFormat.deploy.ps1", de tout sélectionner afin de le copier puis de le coller dans Powershell (pour cela lancer la commande "Powershell" depuis la barre de tache Windows) sans oublier de taper la touche entrez pour lancer l'exécution. Après avoir validé le téléchargement, vous aurez un fichier Kit.de.français.red que vous pouvez modifier. Double-cliquer ensuite dessus pour convertir au célèbre format [markdown](https://daringfireball.net/projects/markdown/syntax) que vous pouvez visualiser par exemple avec le logiciel [typora](https://typora.io/).
+
+
+![https://i.imgur.com/WI9Dy3i.png](https://i.imgur.com/WI9Dy3i.png)
+                    
+
+### Attendu
+
+A la fin de la lecture de ce Kit, vous aurez pris connaissance de ces principes mais avant de pouvoir décider si vous pouvez les adapter à votre cas, il vous faudra d'abord laisser s'écouler quelques temps avant que l'inspiration ne vienne. Par conséquent ne désespérez pas de suite si vous en manquez sur le moment.
+
+### D'où je suis partie
+
+Plus on part de bas, plus c'est difficile. Mais même en partant de bas, comme cela a été le cas pour moi, c'est possible d'arriver bien plus haut qu'espéré.
+Je ne suis pas née en France mais au Cambodge. Bien que cela a été un protectorat français, je ne suis allée que 3 mois à l'école dont un mois dans une école française -à cause des bombardements. J'apprends néanmoins à lire à la maison par la méthode "ABC" - une méthode logique qui me va. Arrivée en France à 7/8 ans, on me met en classe de CE2 après m'avoir fait passer un test de lecture - Valérie et Daniel - je le passe haut la main ayant pris les bonnes intonations et pauses à chaque ponctuation et parce que la maîtresse omet de faire un test de compréhension: je ne connais la signification d'aucun des mots que j'ai lu.
+A 13-14 ans, j'ai encore la tête dans des bibliothèques roses - Jojo Lapin et Oui Oui.  
+
+
+### Evènements déclencheurs
+
+
+Lorsqu'on est mauvais dans un domaine, on n'a généralement pas la prétention de vouloir  sensiblement s'améliorer et surtout la fainiantise, par conséquent il faut des évènements déclencheurs pour nous y pousser.
+
+Mon premier évènement déclencheur est d'avoir reçu en cadeau "Le Livre de la Jungle", la version de Walt-Disney, qui est suffisamment simple pour ne pas me décourager mais m'inciter à ouvrir le dictionnaire pour presque chaque mot rencontré. Cela me permet d'enricher mon vocabulaire qui est très lacunaire à cette époque.
+
+Lorsque je rentre au Collège, les cours de français sont un calvaire lorsqu'il s'agit de dissertation - en grammaire et en dictée, je n'ai pas de problème car c'est relativement logique comme les maths à part quelques règles d'exceptions. J'ai la peur au ventre de la 6ème à la 3ème à chaque fois que je rentre en cours de français même si cela reste  supportable. 
+
+A la fin de la 3ème, je ne sais pourquoi, sans doute parce qu'elle s'est faite à la maison, je décide de "mettre le paquet" sur la dernière dissertation. Je me souviens bien du sujet qui n'avait rien de sexy: "Pensez-vous que les affiches publicitaires dénaturent la ville?" Lorsque la professeure me rend la copie, j'ai la meilleure note: 16/20 alors que pendant 4 ans je me traîne en queue de peloton.
+Le drame est qu'elle me pose la question: "Est-ce que vous l'avez faite toute seule?".Je n'ai pas fanfaronné et répond "oui" du bout de la langue. Ma réponse paraît suspicieuse et je sens un regard méchant me reprochant le mensonge qui n'en est pas un. Je ne sais pas mentir ayant été élevée dans la culture que c'est mal. Je me souviens avoir attendu l'arrivée à la cantine pour pleurer comme une madeleine - un pion a essayé de me consoler.   
+
+Le deuxième évènement déclencheur fut donc la vexation par une professeure.  
+
+Arrivée en seconde, dans un autre lycée que l'établissement de mon collège, je me retrouve avant-dernière en français - dans les autres matières je suis bien classée. Dans ce lycée, on est déconsidéré si on est pas bon dans toutes les matières. Le 3ème facteur déclencheur est que je ne voulai pas faire tache par rapport à d'autres.
+
+Tous ces déclencheurs ont créé un cocktail explosif: c'est la crise. De l'individu à une nation entière, les crises sont soit des occasions de s'enfoncer encore plus, soit de sortir la tête hors de l'eau. Les leaders vous diront que ce qui compte, ce n'est pas l'échec, mais la réaction face à l'échec. Peut-être sauf que c'est facile de le dire quand on s'en est sorti, pas quand on est en plein dedans. 
+
+
+### Connais tes limites
+
+
+Le plan d'action n'est pas si clair que ça au début. En réalité je n'ai même pas l'idée d'en faire un. Je me dis juste "il faut que je m'améliore avec une méthode quelconque".
+
+Auparavant, il faut faire très attention à sa propre psychologie. Comme tout le monde, je n'aime pas échouer. Placer la barre trop haute est le meilleur moyen de se saboter puisqu'on se dit alors qu'on n'y arrivera jamais. Dans mon cas, je ne me suis pas dit "tiens je vais devenir la 1ère ou la 2ème en Français" et encore moins "je vais avoir 18/20 au Bac de Français" - vu qu'au final c'est ce qui est arrivé - j'ai juste eu une ambition limitée: m'améliorer du mieux que je le pourrai en appliquant un programme que je me suis fixée.
+
+Il faut donc se mettre dans la tête que ce qui compte c'est le chemin et non le résultat, que tout ce qu'on aura parcouru sera forcément enrichissant.
+
+
+### Elaborer un "Programme d'Amélioration Continue"
+
+Ce vocable de "Programme d'Amélioration Continue" emprunté aux théorie du Management ne fait évidemment pas parti de mon glossaire à l'époque mais rétrospectivement c'est bien cela que j'ai appliqué.
+- Au niveau objectif de temps, je me fixe pour être prête au 3ème trimestre de 2nde. Il faut se fixer un jalon sinon c'est comme pour un gaz, le temps peut se dilater indéfiniment. Néanmoins il faut absolument laisser du temps au temps sous peine de se décourager prématurément.
+- Au niveau moyens, il faut imaginer ceux que l'on peut avoir à sa portée, y compris en dehors de l'école. Pour ma part, dès les grandes vacances de 3ème, je décide d'écrire des lettres de 6 pages aux copains sur des sujets absolument pas littéraires mais scientifiques sur lesquels je suis à l'aise. Cela m'habitue à écrire ce dont j'ai horreur normalement.  D'habitude j'envoie juste une carte avec une phrase laconique du genre "Salut, je passe de Bonnes Vacances et toi ?". 
+Remarquez qu'il faut être progressif - si j'avais écrit sur des sujets littéraires, je me serai découragée, n'ayant encore aucune culture. Le coeur du programme d'amélioration est donc d'acquérir cette dernière. Pour cela, je me suis mise à avaler tous les romans de Sherlock Holmes et d'Agatha Christa. Comme je n'ai pas le temps d'attaquer toutes les oeuvres de la littérature, j'achète un livre qui résume tous les chefs d'oeuvre classiques de la littérature. Avec ces connaissances, je peux ensuite m'entraîner à la dissertation. 
+- Pour la dissertation, j'ai analysé mon point de blocage: étant matheuse, je trouve illogique qu'on me demande pourquoi j'aime ou pas tel texte de tel auteur puisque la littérature est des sentiments et que "Le coeur a ses raisons que la raison ne connaît point." Je finis par admettre qu'il faut jouer à s'imaginer à être dans la peau d'un littéraire - tiens celui du 1er de la classe en Français, qu'est-ce que lui écrirait ?
+- Enfin, il faut savoir structurer sa dissertation, là c'est assez simple, il suffit de s'entraîner avec le fameux plan dialectique: Thèse, Anti-Thèse, Synthèse. 
+
+### Résultat
+
+Je prête à passer à l'attaque un peu avant le 3ème trimestre que je me suis fixée plus haut. Néanmoins, psychologiquement, cela me convient mieux d'attendre la première dissertation du 3ème trimestre sinon le bulletin mélangeant les mauvaises et 1-2 bonnes notes feraient une moyenne misérable. Lorsque le 3ème trimestre arrive, je me lance, obtenant au final le classement de 2ème. Lorsque le 1er passa en 1ère A et moi en première S, je me suis même retrouvée la première en Français. Les profs me disent n'avoir jamais vu de progrès aussi fulgurant. Après avoir passé le Bac de Français, je n'ai pas pour autant confiance en moi - j'ai le syndrôme de l'imposteur autodidacte - quand j'ouvre l'enveloppe pour la note, je vois le premier chiffre: "8", machinalement je me dis: "Bon 8/20 pas terrible" avant de voir qu'il y avait le chiffre 1 devant. 18/20 je n'arrive pas à croire que je le mérite - ce n'est pas de la fausse modestie - sur d'autres choses je ne suis pas modeste.
+
+### Epilogue
+
+Je ne serai jamais une vraie littéraire même si j'aime un peu plus la littérature et ai acquis une certaine culture. En classe préparatoire aux Grandes Ecoles, je délaisse le Français comme beaucoup, mes notes n'atteignent même pas 10. Mais lorsqu'arrive le concours où tout se joue au 1/4 de point, je décide de me concentrer et j'ai 16/20 - ce qui d'après ce que m'a dit quelqu'un est la 2ème note.
+Choses très importantes à noter: il faut improviser si nécessaire. Pour la préparation au Bac, je m'entraîne toute l'année à faire des dissertations, quand le Bac arrive, le sujet de dissertation ne m'inspirant pas du tout, je prends le commentaire de texte sans m'être jamais préparée directement à ça. Au concours d'ingénieur, la rapidité est de mise, en regardant ma montre, je m'aperçois que je suis une tortue alors je crée une méthode à la sauvette sans l'avoir jamais pratiqué auparavant: je tire 11 traits pour séparer 10 colonnes et j'écris un mot dans chaque colonne. Au total j'obtiens les 400 mots à ne pas dépasser pour le résumé de texte. Là, un autre facteur chance a joué: cette année-là la tradition des concours n'avait pas été respectée: l'auteur qui est tombé est celui de la première année de classe prépa au lieu de la seconde, par conséquent tout le monde a été désavantagé sauf moi car le premier auteur (Saint John Perse) ne m'inspirant pas je n'ai rien étudié de lui.
+
+La chance joue un rôle considérable, parfois il suffit d'un rien pour que tout bascule - dans le bon ou mauvais sens. C'est ça que je trouve le plus épatant en définitive: si la théorie des Univers parallèles est vraie, cela ne s'est pas passé ainsi pour un autre moi !
