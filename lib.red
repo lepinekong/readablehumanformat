@@ -11,7 +11,7 @@ Red [
                     Article
                     Book
                     Index
-                    Summary            
+                    Summary               
                     Glossary
                     Tutorial
                     Memento
