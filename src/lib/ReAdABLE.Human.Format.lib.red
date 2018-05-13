@@ -10,6 +10,8 @@ Red [
         v1.1.1: { added articles-types: [
                     Article
                     Book
+                    Index
+                    Summaries                
                     Glossary
                     Tutorial
                     Memento
@@ -100,6 +102,8 @@ either none? script-path [
 articles-types: [
     Article
     Book
+    Index
+    Summaries
     Glossary
     Tutorial
     Memento
