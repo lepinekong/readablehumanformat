@@ -7,6 +7,22 @@ Red [
             - added .code and .text sections (.text is same as content)
             - support multiple paragraphs with same labels
         }      
+        v1.1.1: { added articles-types: [
+                    Article
+                    Book
+                    Glossary
+                    Tutorial
+                    Memento
+                    Troubleshooting
+                    Troubleshooting
+                    tip
+                    Tips
+                    How-to
+                    How.to
+                    Cheatsheet
+                    Faq
+                ]
+        }
     ]
     Todo: [
         FIX: {
@@ -79,11 +95,35 @@ either none? script-path [
 ;===========================================================================================
 
 ; don't forget to toggle word-wrap in VSCode
-; if no article has been loaded 
 
+; if no article has been loaded
+articles-types: [
+    Article
+    Book
+    Glossary
+    Tutorial
+    Memento
+    Troubleshooting
+    Troubleshooting
+    tip
+    Tips
+    How-to
+    How.to
+    Cheatsheet
+    Faq
+]
 
+article?: false
+article?: false foreach article-type articles-types [
+	if value? article-type [
+		article?: true
+		article: get in system/words article-type 
+		break
+	]
+]
 
-if  ((not value? 'Article) and (not value? 'Tutorial)) [
+;if  ((not value? 'Article) and (not value? 'Tutorial)) [
+if not article? [
     Article: [
 
         Title: "Presenting the ReAdABLE Human Format"
