@@ -25,6 +25,9 @@ Red [
                     Faq
                 ]
         }
+        v1.2.0: {Added utilities for workflow:
+            - .copy-files
+        }
     ]
     Todo: [
         FIX: {
@@ -658,22 +661,3 @@ if .spike [
     print (.to-full-path =>output-file) ; print file output path for info
 ]
 markdown-gen: :.markdown-gen
-
-; script-path: system/options/script
-; script-filename: .get-short-filename script-path
-
-; Unless .spike [
-;     if article [
-;         print "To generate again, type: markdown-gen %output-file-name for example:"
-;         print "markdown-gen %ReAdABLE.Human.Format.md"
-;         print "executing..."
-;         short-filename: .get-short-filename/wo-extension script-path
-;         markdown-file: .to-file reduce [short-filename ".md"] ; example: %ReAdABLE.Human.Format.md 
-;         ;.markdown-gen (markdown-file) ; calling markdown generation specifying output-file
-
-;         ;input-file: to-red-file %ReAdABLE.Human.Format.red
-
-;         output-file: markdown-file
-;         .markdown-gen/output output-file
-;     ]
-; ]
