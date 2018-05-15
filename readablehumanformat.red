@@ -5,7 +5,6 @@ Red [
     Output-files: [ReAdABLE.Human.Format.md]
     Categories: [ReAdABLE]
     Tags: [ReAdABLE Markdown]
-    Language: {english}
 
 ]
 
@@ -18,6 +17,13 @@ Article: [
     Mode: Anonymous-Paragraph-Support ; by default or choose No-Anonymous-Paragraph-Support
 
     Paragraphs: [
+
+    Source: [
+        .title: {ReAdABLE Source (version 1.0)}
+        .text: {[http://readablehumanformat.com/readablehumanformat.red](https://github.com/lepinekong/readablehumanformat/blob/master/readablehumanformat.red)
+        }
+        .Published-Url: http://readablehumanformat.com/readablehumanformat
+    ]          
 
         P0: [
             .title: ""
@@ -219,4 +225,9 @@ Article: [
 
 do read http://readablehumanformat.com/lib.red
 
-.markdown-gen
+markdown-gen
+
+; comment these 2 lines if needed
+.copy-file %readablehumanformat.red ; copy file to first encountered .github directory upstream
+.copy-file %readablehumanformat.md ; copy file to first encountered .github directory upstream
+

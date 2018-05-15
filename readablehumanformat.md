@@ -1,13 +1,16 @@
 
-# Presenting the ReAdABLE Human Format v1.0
+# Presenting the ReAdABLE Human Format
 
 
 ## written in its own format for highly productive Business Article or Software Documentation Writer
 
 
-This is a continuously updated article, come back from time to time. 
 
-WARNING: Version 2.0 will be coming soon and be simpler and richer at the same time.
+### ReAdABLE Source (version 1.0)
+
+[http://readablehumanformat.com/readablehumanformat.red](https://github.com/lepinekong/readablehumanformat/blob/master/readablehumanformat.red)
+
+This is a continuously updated article, come back from time to time.
 
 
 ### Goal of the ReAdABLE Human Format
