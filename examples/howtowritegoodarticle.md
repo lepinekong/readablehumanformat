@@ -4,7 +4,7 @@
 
 ### ReAdABLE Source (version 1.0)
 
-[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)
+[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/examples/howtowritegoodarticle.red)
 
 
 ### Credit
