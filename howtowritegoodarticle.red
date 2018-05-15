@@ -184,12 +184,13 @@ unless exists? lib: %lib/ReAdABLE.Human.Format.lib.red [
 ]
 
 do read lib
+do read .to-file "C:\rebol\.system.user\.code\.domains\.apps\Authoring\libraries\.system.user.apps.authoring.library.red"
 
 markdown-gen
 
 ; deploy to .github local workspace
 try [
-    .copy-file %howtowritegoodarticle.red 
-    .copy-file %howtowritegoodarticle.md 
+    .copy-file/github %howtowritegoodarticle.red 
+    .copy-file/github %howtowritegoodarticle.md 
 ]
 
