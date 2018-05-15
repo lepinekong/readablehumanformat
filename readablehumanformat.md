@@ -1,5 +1,5 @@
 
-# Presenting the ReAdABLE Human Format
+# Presenting the ReAdABLE Human Format v1.0
 
 
 ## written in its own format for highly productive Business Article or Software Documentation Writer
