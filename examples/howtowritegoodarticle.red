@@ -14,6 +14,7 @@ Red [
         Creation: 2018-05-12 19:13:42
         Update: 2018-05-15 19:09:59
     ]
+    Languages: ["english"]
 ]
 
 Article: [
@@ -21,15 +22,11 @@ Article: [
     Title: {How To Write Good Articles}
 
     Source: [
-        .title: {ReAdABLE Source}
+        .title: {ReAdABLE Source (version 1.0)}
         .text: {[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)
         }
         .Published-Url: http://readablehumanformat.com/create.codesnippet.fast 
     ]     
-
-    Version: [
-        .title: {version 1.0}
-    ] 
 
     Credit: [
         .title: {Credit}

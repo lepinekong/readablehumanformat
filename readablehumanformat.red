@@ -5,6 +5,7 @@ Red [
     Output-files: [ReAdABLE.Human.Format.md]
     Categories: [ReAdABLE]
     Tags: [ReAdABLE Markdown]
+    Language: {english}
 
 ]
 
