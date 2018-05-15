@@ -1,6 +1,6 @@
 Red [
     Title: "How to Write Good Article"
-    Build: 1.0.0.2
+    Build: 1.0.0.3
     Credits: ["Sibeesh Venu"]
     References: [
         https://www.c-sharpcorner.com/article/how-to-write-good-articles/
