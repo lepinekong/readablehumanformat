@@ -1,27 +1,54 @@
 Red [
     Title: "How to Write Good Article"
-    File: howtowritegoodarticle.red
-    Output-files: [howtowritegoodarticle.md]
+    Build: 1.0.0.3
+    Credits: ["Sibeesh Venu"]
+    References: [
+        https://www.c-sharpcorner.com/article/how-to-write-good-articles/
+    ]
+    File: howtowritegoodarticle.red.red
+    Output-files: [howtowritegoodarticle.red.md]
     Categories: [Blogging]
-    Tags: [Blogging Writing]
+    Tags: [Markdown Blogging Writing Documentation Templating Scaffolding]
+    Dates: [
+        Creation: 2018-05-12 19:13:42
+    ]
 ]
 
 Article: [
 
     Title: {How To Write Good Articles}
 
+    Source: [
+        .title: {ReAdABLE Source}
+        .text: {[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)}
+        .text: {version: 1.0}
+        .Published-Url: http://readablehumanformat.com/create.codesnippet.fast 
+    ]      
+
     Credit: [
         .title: {Credit}
         .text: {
-            [How To Write Good Articles by Sibeesh Venu](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
+            ["How To Write Good Articles" by *Sibeesh Venu*](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
         }
     ]
 
     Point-1: [
         .title: {Point 1: Introduction}
         .text: {
-            Type your introduction here, see guidance and example.
+            Replace this paragraph with your own content, guidance and example are kept available in .guidance and .example fields (metadata) within the ReAdABLE source if you need to remember.
+
+            *Guidance:*
+
+            >An introduction is very important when you write an article. A good introduction can make the reader want to read further. Trust me, it is very useful too. In this part you can describe what exactly you are going to say/do in the rest of the article. It must be brief. And please never use any code blocks in your introduction, that is never meant to be there. This is the part which lets your readers understand where/what exactly you are intending to do.  
+
+            *Example:*
+            
+            >I am neither an expert nor a guru. But still I suppose I have improved by writing articles for the past two years. I still remember my first article, there were so many mistakes. Remember one thing: “Mistakes are the key to success.” Here I will point out a few things which I follow while writing articles. Please feel free to add your own points to this article. I hope you will like this.
+
         }
+
+        .image: https://i.imgur.com/rNmBuuv.png
+
         .guidance: {
             An introduction is very important when you write an article. A good introduction can make the reader want to read further. Trust me, it is very useful too. In this part you can describe what exactly you are going to say/do in the rest of the article. It must be brief. And please never use any code blocks in your introduction, that is never meant to be there. This is the part which lets your readers understand where/what exactly you are intending to do.            
         }
@@ -157,5 +184,18 @@ Article: [
     ]
 ]
 
-do read http://readablehumanformat.com/lib.red
+unless exists? lib: %lib/ReAdABLE.Human.Format.lib.red [
+    lib: http://readablehumanformat.com/lib.red
+]
+
+do read lib
+do read .to-file "C:\rebol\.system.user\.code\.domains\.apps\Authoring\libraries\.system.user.apps.authoring.library.red"
+
 markdown-gen
+
+; deploy to .github local workspace
+try [
+    .copy-file %howtowritegoodarticle.red 
+    .copy-file %howtowritegoodarticle.md 
+]
+
