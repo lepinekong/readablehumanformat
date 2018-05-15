@@ -1,5 +1,6 @@
 Red [
     Title: "How to Write Good Article"
+    Build: 1.0.0.1
     Credits: ["Sibeesh Venu"]
     References: [
         https://www.c-sharpcorner.com/article/how-to-write-good-articles/
@@ -16,6 +17,12 @@ Red [
 Article: [
 
     Title: {How To Write Good Articles}
+
+    Source: [
+        .title: {ReAdABLE Source}
+        .text: {[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)}
+        .Published-Url: http://readablehumanformat.com/create.codesnippet.fast 
+    ]      
 
     Credit: [
         .text: {
@@ -190,7 +197,7 @@ markdown-gen
 
 ; deploy to .github local workspace
 try [
-    .copy-file/github %howtowritegoodarticle.red 
-    .copy-file/github %howtowritegoodarticle.md 
+    .copy-file %howtowritegoodarticle.red 
+    .copy-file %howtowritegoodarticle.md 
 ]
 
