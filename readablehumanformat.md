@@ -5,7 +5,8 @@
 ## written in its own format for highly productive Business Article or Software Documentation Writer
 
 
-This is a continuously updated article, come back from time to time.
+This is a continuously updated article, come back from time to time. 
+WARNING: Version 2.0 will be coming soon and be simpler and richer at the same time.
 
 
 ### Goal of the ReAdABLE Human Format
