@@ -6,7 +6,10 @@
 
 [http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)
 
-[Credit: "How To Write Good Articles" by *Sibeesh Venu*](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
+### Credit
+
+
+["How To Write Good Articles" by *Sibeesh Venu*](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
 
 Version: 1.0.0
 

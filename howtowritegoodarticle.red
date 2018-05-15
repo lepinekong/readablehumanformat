@@ -1,6 +1,6 @@
 Red [
     Title: "How to Write Good Article"
-    Build: 1.0.0.1
+    Build: 1.0.0.2
     Credits: ["Sibeesh Venu"]
     References: [
         https://www.c-sharpcorner.com/article/how-to-write-good-articles/
@@ -25,8 +25,9 @@ Article: [
     ]      
 
     Credit: [
+        .title: {Credit}
         .text: {
-            [Credit: "How To Write Good Articles" by *Sibeesh Venu*](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
+            ["How To Write Good Articles" by *Sibeesh Venu*](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
         }
     ]
 
