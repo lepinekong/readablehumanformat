@@ -20,8 +20,9 @@ Article: [
 
     Source: [
         .title: {ReAdABLE Source}
-        .text: {[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)}
-        .text: {version: 1.0}
+        .text: {[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)
+        }
+        .text: {version 1.0}
         .Published-Url: http://readablehumanformat.com/create.codesnippet.fast 
     ]      
 
