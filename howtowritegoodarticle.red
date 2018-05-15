@@ -21,6 +21,7 @@ Article: [
     Source: [
         .title: {ReAdABLE Source}
         .text: {[http://readablehumanformat.com/howtowritegoodarticle.red](https://github.com/lepinekong/readablehumanformat/blob/master/howtowritegoodarticle.red)}
+        .text: {version: 1.0}
         .Published-Url: http://readablehumanformat.com/create.codesnippet.fast 
     ]      
 
@@ -29,10 +30,6 @@ Article: [
         .text: {
             ["How To Write Good Articles" by *Sibeesh Venu*](https://www.c-sharpcorner.com/article/how-to-write-good-articles/)
         }
-    ]
-
-    Version: [
-        .text: {Version: 1.0.0}
     ]
 
     Point-1: [
