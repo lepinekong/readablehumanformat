@@ -1,7 +1,8 @@
 Red [
     Title: "How to Write Good Article"
-    Build: 1.0.0.3
+    Build: 1.0.0.4
     Credits: ["Sibeesh Venu"]
+    Owners: ["Lépine Kong"]
     References: [
         https://www.c-sharpcorner.com/article/how-to-write-good-articles/
     ]
@@ -11,6 +12,7 @@ Red [
     Tags: [Markdown Blogging Writing Documentation Templating Scaffolding]
     Dates: [
         Creation: 2018-05-12 19:13:42
+        Update: 2018-05-15 19:09:59
     ]
 ]
 
