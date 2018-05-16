@@ -13,7 +13,7 @@ Red [
 Article: [
 
     Title: "Presenting the ReAdABLE Human Format"
-    Sub-Title: {Announcement: version 2.0.x coming soon with more flexible syntax and more .field tags like 
+    Sub-Title: {**Announcement:** version 2.0.x coming soon with more flexible syntax and more .field tags like 
             .code .youtube .link .links .flowchart .class-diagram ...}
     Mode: Anonymous-Paragraph-Support ; by default or choose No-Anonymous-Paragraph-Support
 

@@ -2,7 +2,7 @@
 # Presenting the ReAdABLE Human Format
 
 
-## Announcement: version 2.0.x coming soon with more flexible syntax and more .field tags like 
+## **Announcement:** version 2.0.x coming soon with more flexible syntax and more .field tags like 
 .code .youtube .link .links .flowchart .class-diagram ...
 
 
