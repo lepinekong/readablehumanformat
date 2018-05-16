@@ -2,8 +2,8 @@
 # Presenting the ReAdABLE Human Format
 
 
-## written in its own format for highly productive Business Article or Software Documentation Writer
-
+## Announcement: version 2.0.x coming soon with more flexible syntax and more .field tags like 
+.code .youtube .link .links .flowchart .class-diagram ...
 
 
 ### ReAdABLE Source (version 1.0)

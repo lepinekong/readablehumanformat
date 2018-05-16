@@ -1,7 +1,7 @@
 Red [
     Title: "ReAdABLE Human Format"
     File: "ReAdABLE.Human.Format.red"
-    Build: 1.0.0.0
+    Build: 1.0.0.1
     Github-Url: http://readablehumanformat.com/readablehumanformat
     Output-files: [ReAdABLE.Human.Format.md]
     Categories: [ReAdABLE]
@@ -13,8 +13,8 @@ Red [
 Article: [
 
     Title: "Presenting the ReAdABLE Human Format"
-    Sub-Title: {written in its own format for highly productive Business Article or Software Documentation Writer
-    }
+    Sub-Title: {Announcement: version 2.0.x coming soon with more flexible syntax and more .field tags like 
+            .code .youtube .link .links .flowchart .class-diagram ...}
     Mode: Anonymous-Paragraph-Support ; by default or choose No-Anonymous-Paragraph-Support
 
     Paragraphs: [
