@@ -1,7 +1,8 @@
 Red [
     Title: "ReAdABLE Human Format"
     File: "ReAdABLE.Human.Format.red"
-    Github-Url: 
+    Build: 1.0.0.0
+    Github-Url: http://readablehumanformat.com/readablehumanformat
     Output-files: [ReAdABLE.Human.Format.md]
     Categories: [ReAdABLE]
     Tags: [ReAdABLE Markdown]
@@ -18,16 +19,17 @@ Article: [
 
     Paragraphs: [
 
-    Source: [
-        .title: {ReAdABLE Source (version 1.0)}
-        .text: {[http://readablehumanformat.com/readablehumanformat.red](https://github.com/lepinekong/readablehumanformat/blob/master/readablehumanformat.red)
-        }
-        .Published-Url: http://readablehumanformat.com/readablehumanformat
-    ]          
+        Source: [
+            .title: {ReAdABLE Source (version 1.0)}
+            .text: {[http://readablehumanformat.com/readablehumanformat.red](https://github.com/lepinekong/readablehumanformat/blob/master/readablehumanformat.red)
+            }
+            .Published-Url: http://readablehumanformat.com/readablehumanformat
+        ]          
 
         P0: [
             .title: ""
-            .content: {This is a continuously updated article, come back from time to time.
+            .text: {Announcement: version 2.0.x coming soon with more flexible syntax and more .field tags like 
+            .code .youtube .link .links .flowchart .class-diagram ...
             }
         ]
 

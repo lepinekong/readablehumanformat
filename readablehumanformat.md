@@ -10,7 +10,8 @@
 
 [http://readablehumanformat.com/readablehumanformat.red](https://github.com/lepinekong/readablehumanformat/blob/master/readablehumanformat.red)
 
-This is a continuously updated article, come back from time to time.
+Announcement: version 2.0.x coming soon with more flexible syntax and more .field tags like 
+.code .youtube .link .links .flowchart .class-diagram ...
 
 
 ### Goal of the ReAdABLE Human Format
