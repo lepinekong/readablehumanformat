@@ -605,9 +605,26 @@ do-trace: :.do-trace
     ]
 ] 
 
+f:  function['.sub-folder [word! string! file! url! block! unset!] /local ][
+    switch/default type?/word get/any '.sub-folder [
+        unset! [
+            print {TODO:}
+        ]
+        word! string! file! url! block! [
+            .sub-folder: form .sub-folder
+            print {TODO:}
+        ]
+    ] [
+        throw error 'script 'expect-arg .sub-folder
+    ]
+]
+
+
 .copy-file: function[ .what-files [file! block!]
     /target-folder .target-folder 
-    /github ; same as none target-folder; .target-folder will be first .github folder encountered in parent folders
+    /github '.sub-folder [word! file! path! url! unset!]; same as none target-folder
+    ; .target-folder will be first .github folder encountered in parent folders
+    ; .sub-folder is optional
     /target-file .target-file
     ][
 
@@ -615,7 +632,25 @@ do-trace: :.do-trace
         what-file: .what-file
         filename: .get-short-filename what-file
 
-        either github or not target-folder [
+        either (github or not target-folder) [
+
+            if github [
+
+                print "github"
+                probe (type?/word get/any '.sub-folder)
+                ask "pause"
+
+                switch type?/word get/any '.sub-folder [
+                    unset! [
+                        print "unset"
+                    ]
+                    word! path! url! file! [
+                        .sub-folder: form .sub-folder
+                        ?? .sub-folder
+                    ]
+                ]
+            ]
+
             get-target-folder: function[path][
 
                 files: read path
@@ -655,4 +690,5 @@ do-trace: :.do-trace
         copy-file .what-files
     ]
 ]
+
 

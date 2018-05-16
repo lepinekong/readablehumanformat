@@ -1,6 +1,7 @@
 Red [
     Title: "ReAdABLE.Human.Format.lib.red"
     Description: {Presenting the ReAdABLE Human Format written in its own format for highly productive aspiring Writer}
+    Build: 1.0.0.1
     History: [
         v1.0.0: {initial version}
         v1.1.0: {
@@ -15,10 +16,9 @@ Red [
                     Glossary
                     Tutorial
                     Memento
+                    learningpath
                     Troubleshooting
-                    Troubleshooting
-                    tip
-                    Tips
+                    tips
                     How-to
                     How.to
                     Cheatsheet
@@ -106,14 +106,13 @@ articles-types: [
     Article
     Book
     Index
-    Summary
+    Summary               
     Glossary
     Tutorial
     Memento
+    learningpath
     Troubleshooting
-    Troubleshooting
-    tip
-    Tips
+    tips
     How-to
     How.to
     Cheatsheet
