@@ -1,32 +1,11 @@
 Red [
     Title: "ReAdABLE.Human.Format.lib.red"
     Description: {Presenting the ReAdABLE Human Format written in its own format for highly productive aspiring Writer}
-    Build: 1.0.0.1
+    Build: 1.0.0.2
     History: [
-        v1.0.0: {initial version}
-        v1.1.0: {
-            - added .code and .text sections (.text is same as content)
-            - support multiple paragraphs with same labels
-        }      
-        v1.1.1: { added articles-types: [
-                    Article
-                    Book
-                    Index
-                    Summary               
-                    Glossary
-                    Tutorial
-                    Memento
-                    learningpath
-                    Troubleshooting
-                    tips
-                    How-to
-                    How.to
-                    Cheatsheet
-                    Faq
-                ]
-        }
-        v1.2.0: {Added utilities for workflow:
-            - .copy-files
+        v1.3.0: {Added field tags:
+            - .youtube
+            - .link
         }
     ]
     Todo: [
@@ -57,6 +36,10 @@ Red [
                         .code: {code}
                         .image: http://optional.image-1.jpg
                         .text: {multiple text instances supported}
+                        .link: http://google.com
+                        .link: ["google" http://google.com]
+                        ;.link/automatic-caption http://google.com ; planned
+                        ;.link/automatic-screenshot http://google.com ; planned
                     ]
                     Paragraph: [
                         .title: {anonymous paragraph with non-unique label}
@@ -106,6 +89,8 @@ articles-types: [
     Article
     Book
     Index
+    Bookmark
+    Bookmarks
     Summary               
     Glossary
     Tutorial
@@ -128,7 +113,6 @@ article?: false foreach article-type articles-types [
 	]
 ]
 
-;if  ((not value? 'Article) and (not value? 'Tutorial)) [
 if not article? [
     Article: [
 
@@ -348,23 +332,8 @@ if .spike [
     ;-> [P1: [.title: ...] P2: [.title: ...]  
     ;probe Paragraphs
     ;print length? Paragraphs
-    ; - 2. Transform Paragraphs block to Object
-    ; oParagraphs: Object Paragraphs ; convert paragraphs to object for easing extraction with values-of
-    ; Paragraphs-blocks: values-of oParagraphs ; extract all paragraphs details with their labels
-    ; ; -> [[.title: ...] [.title: ...]]
-    ; probe Paragraphs-blocks
-    ; print length? Paragraphs-blocks
 
-    Paragraphs-Blocks: extract/index Paragraphs 2 2
-
-    ; ; - 3. Iterate through Paragraphs-blocks
-    ; foreach paragraph-block Paragraphs-blocks [
-
-    ;     title: .select paragraph-block '.title ; select title from paragraph block (using library .select method)
-    ;     content: .select paragraph-block '.content ; select content from paragraph block (using library .select method)
-    ;     image: .select paragraph-block '.image ; select image from paragraph block (using library .select method)
-
-    ; ]   
+    Paragraphs-Blocks: extract/index Paragraphs 2 2 
 
     forall Paragraphs-Blocks [
         Paragraph-Content: Paragraphs-Blocks/1
@@ -382,8 +351,9 @@ if .spike [
 ; PROGRAM
 ;===========================================================================================
 
-
 .markdown-gen: function [ /input <=input-file /output =>output-file [file! url! string! unset!]][
+
+
 
     condition: (not value? 'article) and (not value? 'tutorial)  
 
@@ -482,14 +452,173 @@ if .spike [
         ]
         .paragraph-title: :emit-paragraph-title
 
-        emit-image: function[image][
+        youtube?: function[url][
+            if find url "youtube.com" [
+                return true
+            ]
+            return false
+        ]
 
-            if find image "https://imgur.com" [
-                ; check extension if none add .png
-                if not find image ".png" [
-                    image: rejoin [image ".png"]
+        normalize-url-block: function[title-with-url][
+
+            first-item: title-with-url/1
+            either url? first-item [
+                title: title-with-url/2
+                url: title-with-url/1
+            ][
+                title: title-with-url/1
+                url: title-with-url/2
+            ]   
+            return reduce [title url]         
+        ]
+
+        emit-youtube: function[youtube-url-or-id [url! string! word! block!]][
+
+            YOUTUBE_WIDTH: 560
+            YOUTUBE_HEIGHT: 315
+
+            YOUTUBE_EMBED_URL_PREFIX: https://www.youtube.com/embed/
+
+
+            unless none? youtube-url-or-id [
+
+                title: none
+
+                ; do-trace 486 [
+                ;     ?? youtube-url-or-id
+                ; ] %ReAdABLE.Human.Format.lib.red
+
+                either url? youtube-url-or-id [
+                    youtube-url: youtube-url-or-id
+                ][
+
+                    either not block? youtube-url-or-id [
+                        id: youtube-url-or-id
+                        youtube-url: rejoin [YOUTUBE_EMBED_URL_PREFIX id]
+                    ][
+                        set [title youtube-url] normalize-url-block youtube-url-or-id
+
+                        ; do-trace 500 [
+                        ;     ?? title
+                        ;     ?? youtube-url
+                        ; ] %ReAdABLE.Human.Format.lib.red                        
+
+                    ]
+                    
+                ]
+                
+                either find youtube-url "/embed/" [
+                    youtube-embed-url: youtube-url-or-id
+                ][
+                    parse youtube-url [
+                        thru "v=" copy id to end
+                    ]
+                    youtube-embed-url: rejoin [YOUTUBE_EMBED_URL_PREFIX id]
+                ]
+
+                unless none? title [
+                    emit [title]
+                ]
+
+                emit [
+                    {<iframe width="} YOUTUBE_WIDTH {" height="} YOUTUBE_HEIGHT {" src="}
+                    youtube-embed-url
+                    {" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
+                ]                
+            ]
+        ]
+        .youtube: :emit-youtube        
+
+        emit-link: function[url.or.title-with-url [url! file! path! block!] /no-bullet][
+
+            url: url.or.title-with-url
+
+            ; do-trace 534 [
+            ;     ?? url
+            ; ] %ReAdABLE.Human.Format.lib.red           
+
+            title: url
+
+            if block? url.or.title-with-url [
+
+                first-item: url.or.title-with-url/1
+                either url? first-item [
+                    title: url.or.title-with-url/2
+                    url: url.or.title-with-url/1
+                ][
+                    title: url.or.title-with-url/1
+                    url: url.or.title-with-url/2
                 ]
             ]
+
+            unless none? url.or.title-with-url  [
+                either not youtube? url [
+                    bullet: ""
+                    unless no-bullet [
+                        bullet: "- "
+                    ]
+                    emit [
+                        bullet
+                        {[} title {]}
+                        {(} url {)
+                        }
+                    ]
+                ][
+                    emit-youtube url
+                ]
+            ]             
+        ]
+        .link: :emit-link
+
+        emit-links: function[links-collection][
+            foreach [title url] links-collection [
+
+                either not block? title [
+
+                    url-block: reduce [title url]
+
+                    ; do-trace 574 [
+                    ;     ?? url-block
+                    ; ] %ReAdABLE.Human.Format.lib.red
+
+                    emit-link url-block ; reduce will convert to block type
+                ][
+                    emit-link title ; it's already a link block
+                    emit-link url
+                ]
+
+            ]
+        ]
+        .links: :emit-links
+
+        emit-image: function[
+            image 
+            /register-before do-before-plugin 
+            /register-after do-after-plugin
+        ][
+            before-plugins: [
+                if-imgur: [
+                    print "executing plugins"
+                    if find image "https://imgur.com" [
+                        ; check imgur url extension if none add .png
+                        if not find image ".png" [
+                            image: rejoin [image ".png"]
+                        ]
+                    ]                    
+                ]
+            ]
+
+            ; this checking is executed before emitting image markdown
+            ; if find image "https://imgur.com" [
+            ;     ; check extension if none add .png
+            ;     if not find image ".png" [
+            ;         image: rejoin [image ".png"]
+            ;     ]
+            ; ]
+
+            code-plugins: extract/index before-plugins 2 2 ; extract every 2 items starting at index 2
+            foreach code-plugin code-plugins [do code-plugin]
+
             unless none? image [
                 emit [
                     {![} image {]}
@@ -569,8 +698,6 @@ if .spike [
         ]   
     }    
 
-
-
     title: .select Article 'Title ; extract title from Article
     Sub-title: .select Article 'Sub-Title ; extract sub-title from Article
     Paragraphs: .select Article 'Paragraphs ; extract all paragraphs from Articles
@@ -638,10 +765,24 @@ if .spike [
                 .content content ; emit markdown content with code block when any   
             ]
 
-
             if (form label) = ".image" [
                 image: value
                 .image image ; emit markdown for embedding image    
+            ]
+
+            if (form label) = ".link" [
+                url: value
+                .link url ; emit markdown for embedding image    
+            ] 
+
+            if (form label) = ".links" [
+                links-collection: value
+                .links links-collection ; emit markdown for embedding image    
+            ]                        
+
+            if (form label) = ".youtube" [
+                you-tube-url-or-id: value
+                .youtube you-tube-url-or-id
             ]
 
             Paragraph-Content: next Paragraph-Content
