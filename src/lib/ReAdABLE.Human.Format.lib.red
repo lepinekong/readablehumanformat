@@ -801,7 +801,17 @@ if .spike [
                 url: value
 
                 .link url ; emit markdown for embedding image    
-            ]              
+            ]  
+
+            if (((form label) = ".links" ) or ((form label) = ".urls" )) [
+                links-collection: value
+                .links links-collection ; emit markdown for embedding image    
+            ]                        
+
+            if (form label) = ".youtube" [
+                you-tube-url-or-id: value
+                .youtube you-tube-url-or-id
+            ]                        
 
             Paragraph-Content: next Paragraph-Content
         ]        
