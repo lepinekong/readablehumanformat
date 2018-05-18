@@ -110,14 +110,18 @@ articles-types: [
     Glossary
     Tutorial
     Memento
+    Snippet
+    Bookmark
+    Journal
     Troubleshooting
-    Troubleshooting
-    tip
     Tips
     How-to
-    How.to
     Cheatsheet
+    Best-Practices
+    Coding-Standards
+    Coding-Style
     Faq
+    
 ]
 
 article?: false
