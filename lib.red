@@ -768,9 +768,17 @@ if .spike [
 
             ]            
 
-            if (form label) = ".code" [
+            if find (form label)  ".code" [
+
+                code-markup: {```}
+                if find (form label) "/" [
+                    language: (pick (split (form label) "/") 2)
+                    replace language ":" ""
+                    code-markup: rejoin [code-markup language]
+                ]               
+
                 content: rejoin [
-                    {```}
+                    code-markup
                     newline 
                     value
                     newline
