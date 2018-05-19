@@ -104,24 +104,41 @@ either none? script-path [
 ; if no article has been loaded
 articles-types: [
     Article
+    Articles
+    Message
+    Messages
     Book
+    Books
     Index
+    Indexes
     Summary
+    Summaries
     Glossary
+    Glossaries
     Tutorial
+    Tutorials
     Memento
+    Mementos
     Snippet
+    Snippets
     Bookmark
     Journal
+    Journals
     Troubleshooting
+    Troubleshootings
     Tips
-    How-to
+    How-To
+    How-Tos
+    Faq
+    Faqs    
     Cheatsheet
+    Cheatsheets
+    Best-Practice
     Best-Practices
+    Coding-Standard
     Coding-Standards
     Coding-Style
-    Faq
-    
+    Coding-Styles
 ]
 
 article?: false
@@ -641,7 +658,11 @@ if .spike [
         ]
         .youtube: :emit-youtube               
 
-        emit-link: function[url.or.title-with-url [url! file! path! block!] /no-bullet][
+        emit-link: function[url.or.title-with-url [url! file! path! block! none!] /no-bullet][
+
+            if none? url.or.title-with-url [
+                return false
+            ]
 
             url: url.or.title-with-url
             title: url
@@ -678,13 +699,19 @@ if .spike [
         .link: :emit-link
 
         emit-links: function[links-collection][
+
             foreach [title url] links-collection [
 
                 either not block? title [
 
-                    url-block: reduce [title url]
-
-                    emit-link url-block ; reduce will convert to block type
+                    either ((not url? title) and (not file? title)) [
+                        url-block: reduce [title url]
+                        emit-link url-block ; reduce will convert to block type
+                    ][
+                        emit-link title
+                        emit-link url
+                    ]
+                    
                 ][
                     emit-link title ; it's already a link block
                     emit-link url
