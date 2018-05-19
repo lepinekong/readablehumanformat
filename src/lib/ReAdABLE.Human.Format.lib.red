@@ -122,6 +122,7 @@ articles-types: [
     Snippet
     Snippets
     Bookmark
+    Bookmarks
     Journal
     Journals
     Troubleshooting
