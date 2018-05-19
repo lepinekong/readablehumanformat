@@ -873,5 +873,5 @@ Update-lib-authoring: function[][
 ]
 
 ;Update-lib-authoring
-update-lib
+;update-lib
 
