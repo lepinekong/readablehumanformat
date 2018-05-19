@@ -1,6 +1,7 @@
 Red [
     Title: "ReAdABLE.Human.Format.lib.red"
     Description: {Presenting the ReAdABLE Human Format written in its own format for highly productive aspiring Writer}
+    Build: 1.0.0.1
     History: [
         v1.0.0: {initial version}
         v1.1.0: {
@@ -125,6 +126,12 @@ articles-types: [
     Bookmarks
     Journal
     Journals
+    Bug
+    Bugs
+    Issue
+    Issues
+    Feature
+    Features
     Troubleshooting
     Troubleshootings
     Tips
@@ -846,9 +853,25 @@ if .spike [
 
     ]
 
-   
-
     print (.to-full-path =>output-file) ; print file output path for info
 ]
 markdown-gen: :.markdown-gen
+
+.copy-file: function[what-file to-file][
+    write/binary to-file read/binary what-file
+]
+
+update-lib: function[][
+    .copy-file %ReAdABLE.Human.Format.lib.red %../.github/lib.red
+    .copy-file %ReAdABLE.Human.Format.lib.red %../.github/src/lib/ReAdABLE.Human.Format.lib.red
+]
+
+Update-lib-authoring: function[][
+    .copy-file to-red-file 
+        "C:\rebol\.system.user\.code\.domains\.apps\Authoring\libraries\.system.user.apps.authoring.library.red" 
+        %../.github/authoring.lib.red
+]
+
+;Update-lib-authoring
+update-lib
 
