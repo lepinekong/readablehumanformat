@@ -834,7 +834,6 @@ if .spike [
             if find (form label)  ".quote" [
                 content: rejoin [
                     ">"
-                    newline 
                     value
                     newline
                 ] 
