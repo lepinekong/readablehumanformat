@@ -834,7 +834,7 @@ if .spike [
             if find (form label)  ".quote" [
                 content: rejoin [
                     ">"
-                    value
+                    trim/head value
                     newline
                 ] 
                 .content content ; emit markdown content with quote                   
