@@ -1,7 +1,7 @@
 Red [
     Title: "ReAdABLE.Human.Format.lib.red"
     Description: {Presenting the ReAdABLE Human Format written in its own format for highly productive aspiring Writer}
-    Build: 1.0.0.1
+    Build: 1.0.0.2
     History: [
         v1.0.0: {initial version}
         v1.1.0: {
@@ -29,6 +29,7 @@ Red [
         v1.2.0: {Added utilities for workflow:
             - .copy-files
         }
+        v1.2.1: {added .quote}
     ]
     Todo: [
         FIX: {
@@ -666,7 +667,11 @@ if .spike [
         ]
         .youtube: :emit-youtube               
 
-        emit-link: function[url.or.title-with-url [url! file! path! block! none!] /no-bullet][
+        emit-link: function[
+            url.or.title-with-url [url! file! path! block! none!] 
+            /no-bullet
+            /screen-copy
+            ][
 
             if none? url.or.title-with-url [
                 return false
@@ -826,6 +831,16 @@ if .spike [
                 .content content ; emit markdown content with code block when any   
             ]
 
+            if find (form label)  ".quote" [
+                content: rejoin [
+                    ">"
+                    newline 
+                    value
+                    newline
+                ] 
+                .content content ; emit markdown content with quote                   
+            ]
+
 
             if (form label) = ".image" [
                 image: value
@@ -835,7 +850,15 @@ if .spike [
             if (((form label) = ".link" ) or ((form label) = ".url" )) [
                 url: value
 
-                .link url ; emit markdown for embedding image    
+                either find (form label) "/" [
+                    ;refinement: (pick (split (form label) "/") 2)
+                    refinements: remove (split (form label) "/")
+                    forall refinements [replace/all refinements/1 ":" ""]
+                    
+                ][
+                    .link url ; emit markdown for link 
+                ]
+            
             ]  
 
             if (((form label) = ".links" ) or ((form label) = ".urls" )) [
@@ -857,21 +880,5 @@ if .spike [
 ]
 markdown-gen: :.markdown-gen
 
-.copy-file: function[what-file to-file][
-    write/binary to-file read/binary what-file
-]
 
-update-lib: function[][
-    .copy-file %ReAdABLE.Human.Format.lib.red %../.github/lib.red
-    .copy-file %ReAdABLE.Human.Format.lib.red %../.github/src/lib/ReAdABLE.Human.Format.lib.red
-]
-
-Update-lib-authoring: function[][
-    .copy-file to-red-file 
-        "C:\rebol\.system.user\.code\.domains\.apps\Authoring\libraries\.system.user.apps.authoring.library.red" 
-        %../.github/authoring.lib.red
-]
-
-;Update-lib-authoring
-;update-lib
 
